@@ -25,7 +25,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <img src="img/filter_background.jpg" width="auto" height="auto" alt="">
-      <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="costoutputfrom.value=costperdayfrom.value" oninput="costoutputbefore.value=costperdaybefore.value" >
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="costoutputfrom.value = costperdayfrom.value" oninput="costoutputbefore.value = costperdaybefore.value">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -61,26 +61,44 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend class="visually-hidden">Стоимость в сутки (Р):</legend>
+          <legend>Стоимость в сутки (Р):</legend>
           <ul>
             <li class="cost-filter output-area">
-              <label for="costoutput-from">От</label>
-              <output name="costoutput-from" id="costoutput-from"></output>
+              <label for="costoutputfrom">От</label>
+              <output for="costperdayfrom" name="costoutputfrom" id="costoutputfrom"></output>
             </li>
             <li class="cost-filter output-area">
-              <label for="costoutput-before">До</label>
-              <output name="costoutput-before" id="costoutput-before"></output>
+              <label for="costoutputbefore">До</label>
+              <output for="costperdaybefore" name="costoutputbefore" id="costoutputbefore"></output>
             </li>
             <li class="cost-filter">
               <input type="range" name="costperdayfrom" id="costperdayfrom" min="0" max="4000" step="100" value="0">
             </li>
-            <li>
+            <li class="cost-filter">
               <input type="range" name="costperdaybefore" id="costperdaybefore" min="0" max="4000" step="100" value="3000">
             </li>
           </ul>
         </fieldset>
         <button type="submit" class="filter-button button">Показать</button>
       </form>
+    </section>
+    <section class="filter-results">
+      <h2 class="visually-hidden">Результаты фильтра</h2>
+      <span>Найдено: 3</span><li>
+        <ul>Сортировка:
+          <li class="sorting">
+            <label for="byprice">По цене</label>
+            <input class="visually-hidden sorting-input-radio" type="radio" name="sorting-group" value="byprice" id="byprice" checked>
+          </li>
+          <li class="sorting">
+            <label for="bytype">По цене</label>
+            <input class="visually-hidden sorting-input-radio" type="radio" name="sorting-group" value="bytype" id="bytype">
+          </li>
+          <li class="sorting">
+            <label for="byrating">По цене</label>
+            <input class="visually-hidden sorting-input-radio" type="radio" name="sorting-group" value="byrating" id="byrating">
+          </li>
+        </ul>
     </section>
 
     <section class="hotels">
