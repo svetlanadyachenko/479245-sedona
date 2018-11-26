@@ -24,7 +24,7 @@
       <span>Welcome to the gorgeous</span>
       <h1>Sedona</h1>
       <span>"Because the Grand Canyon sucks!"</span>
-      <img src="img/background _photo_index.jpg" width="auto" height="auto" alt="" >
+      <img src="img/background_photo_index.jpg" width="auto" height="auto" alt="" >
 
       <section class="features">
         <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -88,16 +88,16 @@
       </section>
 
       <section class="lookuphotels">
-        <h2><b>Заинтересовались?</b></h2>
-        <p class="lookuphotels-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <h2>Поиск гостиницы в Седоне</h2>
-        <!-- Здесь будет форма -->
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+         <h3><b>Заинтересовались?</b></h3>
+          <p class="lookuphotels-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="modal-search" type="button">Поиск гостиницы в Седоне</button>
       </section>
     </main>
 
     <footer class="main-footer">
       <p class="footer-contacts">
-        <a href="#">#VisitSedona</a>
+        <a href="map.html">#VisitSedona</a>
       </p>
 
       <div class="footer-social">
@@ -114,8 +114,41 @@
           <img src="img/logo_ntmlacademy.svg" width="auto" height="auto" alt="Логотип HTML Academy">HTML Academy
         </a>
       </p>
-
     </footer>
+
+    <section class="modal modal-search">
+      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <ul>
+            <li class="search-option">
+              <label for="datein">Дата заезда:</label>
+              <input class="search-input" type="date" name="datein" id="datein">
+            </li>
+            <li class="search-option">
+              <label for="dateout">Дата выезда:</label>
+              <input class="search-input" type="date" name="dateout" id="dateout">
+            </li>
+            <li class="search-option">
+              <label for="adults">Взрослые:</label>
+              <input class="search-input" type="number" name="adults" id="adults" min="1" max="10" step="1">
+            </li>
+            <li class="search-option">
+              <label for="kids">Дети:</label>
+              <input class="search-input" type="number" name="kids" id="kids" min="0" max="10" step="1">
+            </li>
+          </ul>
+         <button type="submit" class="search-button">Найти</button>
+       </fieldset>
+      </form>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="auto" height="auto" alt="Карта Седоны">
+      </p>
+    </section>
 
   </body>
 </html>

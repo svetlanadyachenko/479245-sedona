@@ -25,7 +25,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <img src="img/filter_background.jpg" width="auto" height="auto" alt="">
-      <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="costoutputfrom.value = costperdayfrom.value" oninput="costoutputbefore.value = costperdaybefore.value">
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -63,18 +63,20 @@
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
           <ul>
-            <li class="cost-filter output-area">
-              <label for="costoutputfrom">От</label>
-              <output for="costperdayfrom" name="costoutputfrom" id="costoutputfrom"></output>
-            </li>
-            <li class="cost-filter output-area">
-              <label for="costoutputbefore">До</label>
-              <output for="costperdaybefore" name="costoutputbefore" id="costoutputbefore"></output>
+            <li class="cost-filter">
+              <label for="costfrom">От</label>
+              <input class="cost" name="costfrom" id="costfrom" type="number" min="0" max="4000" step="100">
             </li>
             <li class="cost-filter">
+              <label for="costbefore">До</label>
+              <input class="cost" name="costbefore" id="costbefore" type="number" min="0" max="4000" step="100">
+            </li>
+            <li class="cost-filter">
+              <label class="visually-hidden" for="costperdayfrom">От</label>
               <input type="range" name="costperdayfrom" id="costperdayfrom" min="0" max="4000" step="100" value="0">
             </li>
             <li class="cost-filter">
+              <label class="visually-hidden" for="costperdaybefore">До</label>
               <input type="range" name="costperdaybefore" id="costperdaybefore" min="0" max="4000" step="100" value="3000">
             </li>
           </ul>
@@ -82,23 +84,26 @@
         <button type="submit" class="filter-button button">Показать</button>
       </form>
     </section>
+
     <section class="filter-results">
       <h2 class="visually-hidden">Результаты фильтра</h2>
-      <span>Найдено: 3</span><li>
+      <span>Найдено: 3</span>
         <ul>Сортировка:
           <li class="sorting">
             <label for="byprice">По цене</label>
             <input class="visually-hidden sorting-input-radio" type="radio" name="sorting-group" value="byprice" id="byprice" checked>
           </li>
           <li class="sorting">
-            <label for="bytype">По цене</label>
+            <label for="bytype">По типу</label>
             <input class="visually-hidden sorting-input-radio" type="radio" name="sorting-group" value="bytype" id="bytype">
           </li>
           <li class="sorting">
-            <label for="byrating">По цене</label>
+            <label for="byrating">По рейтингу</label>
             <input class="visually-hidden sorting-input-radio" type="radio" name="sorting-group" value="byrating" id="byrating">
           </li>
         </ul>
+      <button class="navigation" type="button">Up</button>
+      <button class="navigation" type="button">Down</button>
     </section>
 
     <section class="hotels">
@@ -109,11 +114,17 @@
             <img src="img/amararesort&spa.jpg" width="auto" height="auto" alt="Amara Resort & SPA">
           </p>
           <p class="hotels-item-price">
-          <h3>Amara Resort & SPA</h3>
-           <span class="hotels-type">Гостиница</span>
-           <span class="hotels-price">От 4000 р.</span>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <h3>Amara Resort & SPA</h3>
+             <span class="hotels-type">Гостиница</span>
+             <span class="hotels-price">От 4000 р.</span>
+              <button class="details" type="button">Подробнее</button>
+              <a class="button" href="#">Забронировать</a>
+          </p>
+          <p>
+            <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
+            <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
+            <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
+            <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
           </p>
           <span class="reyting">Рейтинг: 8,5</span>
         </li>
@@ -123,11 +134,16 @@
             <img src="img/desertquailinn.jpg" width="auto" height="auto" alt="Desert Quail INN">
           </p>
           <p class="hotels-item-price">
-          <h3>Desert Quail INN</h3>
-           <span class="hotels-type">Мотель</span>
-           <span class="hotels-price">От 3000 р.</span>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <h3>Desert Quail INN</h3>
+             <span class="hotels-type">Мотель</span>
+             <span class="hotels-price">От 3000 р.</span>
+              <button class="details" type="button">Подробнее</button>
+              <a class="button" href="#">Забронировать</a>
+          </p>
+          <p>
+            <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
+            <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
+            <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
           </p>
           <span class="reyting">Рейтинг: 8,9</span>
         </li>
@@ -137,11 +153,15 @@
             <img src="img/villasatpocodiablo.jpg" width="auto" height="auto" alt="Villas at Poco Diablo">
           </p>
           <p class="hotels-item-price">
-          <h3>Villas at Poco Diablo</h3>
-           <span class="hotels-type">Апартаменты</span>
-           <span class="hotels-price">От 2000 р.</span>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <h3>Villas at Poco Diablo</h3>
+             <span class="hotels-type">Апартаменты</span>
+             <span class="hotels-price">От 2000 р.</span>
+              <button class="details" type="button">Подробнее</button>
+              <a class="button" href="#">Забронировать</a>
+          </p>
+          <p>
+            <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
+            <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
           </p>
           <span class="reyting">Рейтинг: 9,2</span>
         </li>
@@ -149,26 +169,26 @@
     </section>
   </main>
 
-    <footer class="main-footer">
-      <p class="footer-contacts">
-        <a href="#">#VisitSedona</a>
-      </p>
+  <footer class="main-footer">
+    <p class="footer-contacts">
+      <a href="map.html">#VisitSedona</a>
+    </p>
 
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
-        </ul>
-      </div>
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">YouTube</a></li>
+      </ul>
+    </div>
 
-      <p class="footer-copyright">
-        <span>WebsiteBy</span>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo_ntmlacademy.svg" width="auto" height="auto" alt="Логотип HTML Academy">HTML Academy
-        </a>
-      </p>
-    </footer>
+    <p class="footer-copyright">
+      <span>WebsiteBy</span>
+      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo_ntmlacademy.svg" width="auto" height="auto" alt="Логотип HTML Academy">HTML Academy
+      </a>
+    </p>
+  </footer>
 
   </body>
 </html>
