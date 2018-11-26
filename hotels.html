@@ -25,7 +25,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <img src="img/filter_background.jpg" width="auto" height="auto" alt="">
-      <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="costoutput.value=costperday.value">
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="costoutputfrom.value=costperdayfrom.value" oninput="costoutputbefore.value=costperdaybefore.value" >
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -60,14 +60,24 @@
             </li>
           </ul>
         </fieldset>
-        <fildset>
-          <div class="cost-filter">
-            <label for="costperday">Стоимость в сутки (Р):</label>
-            <input type="range" name="costperday" id="costperday" min="0" max="5000" step="100">
-          </div>
-          <div class="cost-filter output-area">
-            <output name="costoutput"></output>
-          </div>
+        <fieldset>
+          <legend class="visually-hidden">Стоимость в сутки (Р):</legend>
+          <ul>
+            <li class="cost-filter output-area">
+              <label for="costoutput-from">От</label>
+              <output name="costoutput-from" id="costoutput-from"></output>
+            </li>
+            <li class="cost-filter output-area">
+              <label for="costoutput-before">До</label>
+              <output name="costoutput-before" id="costoutput-before"></output>
+            </li>
+            <li class="cost-filter">
+              <input type="range" name="costperdayfrom" id="costperdayfrom" min="0" max="4000" step="100" value="0">
+            </li>
+            <li>
+              <input type="range" name="costperdaybefore" id="costperdaybefore" min="0" max="4000" step="100" value="3000">
+            </li>
+          </ul>
         </fieldset>
         <button type="submit" class="filter-button button">Показать</button>
       </form>
