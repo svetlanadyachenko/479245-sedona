@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>City of Sedona</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-        <a class="main-header-logo">
-          <img src="img/logosedona.png" width="140" height="71" alt="Логотип Sedona">
-        </a>
+      <a class="main-header-logo">
+        <img src="img/logosedona.png" width="140" height="71" alt="Логотип Sedona">
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -20,16 +21,14 @@
         </ul>
       </nav>
     </header>
-
     <main class="container">
-
-      <span>Welcome to the gorgeous</span>
-      <h1>Sedona</h1>
-      <span>"Because the Grand Canyon sucks!"</span>
-      <img src="img/background_photo_index.jpg" width="auto" height="auto" alt="" >
-
+      <section class="greeting">
+        <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+        <img src="img/background_photo_index.jpg" width="100%" height="auto" alt="" >
+        <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona">
+      </section>
       <section class="features">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="features-list">
           <li class="feature-item">
@@ -37,34 +36,32 @@
             <p>-№1-</p>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="img/realcity.jpg" width="auto" height="auto" alt="Настойщий городок">
-
-              <div class="service">
+            <div class="service">
               <ul class="service-list">
                 <li class="service-item">
-                 <a class="service-type" href="#">
-                  <img src="img/motel.svg" width="auto" height="auto" alt="Жилье">
-                 </a>
-                 <h3>Жильё</h3>
-                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <a class="service-type" href="#">
+                    <img src="img/motel.svg" width="auto" height="auto" alt="Жилье">
+                  </a>
+                  <h3>Жильё</h3>
+                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li>
-                 <a class="service-type" href="#">
-                 <img src="img/food.svg" width="auto" height="auto" alt="Еда">
-                 </a>
-                 <h3>Еда</h3>
-                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <a class="service-type" href="#">
+                   <img src="img/food.svg" width="auto" height="auto" alt="Еда">
+                  </a>
+                  <h3>Еда</h3>
+                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li>
-                 <a class="service-type" href="#">
-                 <img src="img/souvenirs.svg" width="auto" height="auto" alt="Сувениры">
-                 </a>
-                 <h3>Сувениры</h3>
-                 <p>Не только китайского, но и местного производства!</p>
+                  <a class="service-type" href="#">
+                   <img src="img/souvenirs.svg" width="auto" height="auto" alt="Сувениры">
+                  </a>
+                  <h3>Сувениры</h3>
+                  <p>Не только китайского, но и местного производства!</p>
                 </li>
-               </ul>
-             </div>
-
-         </li>
+              </ul>
+            </div>
+          </li>
           <li class="feature-item">
             <h3>Там есть мост дьявола</h3>
             <p>-№2-</p>
@@ -88,20 +85,17 @@
           </li>
         </ul>
       </section>
-
       <section class="lookuphotels">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-         <h3><b>Заинтересовались?</b></h3>
-          <p class="lookuphotels-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="modal-search" type="button">Поиск гостиницы в Седоне</button>
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="search-in-sedona" type="button">Поиск гостиницы в Седоне</button>
       </section>
     </main>
-
     <footer class="main-footer">
       <p class="footer-contacts">
         <a href="map.html">#VisitSedona</a>
       </p>
-
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Twitter</a></li>
@@ -109,7 +103,6 @@
           <li><a class="social-button" href="#">YouTube</a></li>
         </ul>
       </div>
-
       <p class="footer-copyright">
         <span>WebsiteBy</span>
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -117,7 +110,6 @@
         </a>
       </p>
     </footer>
-
     <section class="modal modal-search">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <form class="search" action="https://echo.htmlacademy.ru" method="get">
@@ -133,24 +125,22 @@
             </li>
             <li class="search-option">
               <label for="adults">Взрослые:</label>
-              <input class="search-input" type="number" name="adults" id="adults" min="1" max="10" step="1">
+              <input class="search-input" type="number" name="adults" id="adults" min="1" max="10" step="1" placeholder="2">
             </li>
             <li class="search-option">
               <label for="kids">Дети:</label>
-              <input class="search-input" type="number" name="kids" id="kids" min="0" max="10" step="1">
+              <input class="search-input" type="number" name="kids" id="kids" min="0" max="10" step="1" placeholder="0">
             </li>
           </ul>
-         <button type="submit" class="search-button">Найти</button>
-       </fieldset>
+          <button type="submit" class="search-button">Найти</button>
+        </fieldset>
       </form>
     </section>
-
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
         <img src="img/map.jpg" width="auto" height="auto" alt="Карта Седоны">
       </p>
     </section>
-
   </body>
 </html>
