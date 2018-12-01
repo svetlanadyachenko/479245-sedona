@@ -24,8 +24,9 @@
     <main class="container">
       <section class="greeting">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-        <img src="img/background_photo_index.jpg" width="100%" height="auto" alt="" >
-        <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona">
+        <div class="greeting-picture">
+          <div class="greeting-text"></div>
+        </div>
       </section>
       <section class="features">
         <h2>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
@@ -106,7 +107,7 @@
       <p class="footer-copyright">
         <span>WebsiteBy</span>
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-ntmlacademy.svg" width="auto" height="auto" alt="Логотип HTML Academy">HTML Academy
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </p>
     </footer>
@@ -118,18 +119,24 @@
             <li class="search-option">
               <label for="datein">Дата заезда:</label>
               <input class="search-input" type="date" name="datein" id="datein">
+              <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
             </li>
             <li class="search-option">
               <label for="dateout">Дата выезда:</label>
               <input class="search-input" type="date" name="dateout" id="dateout">
+              <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
             </li>
             <li class="search-option">
               <label for="adults">Взрослые:</label>
+              <button class="min-max" type="button">-</button>
               <input class="search-input" type="number" name="adults" id="adults" min="1" max="10" step="1" placeholder="2">
+              <button class="min-max" type="button">+</button>
             </li>
             <li class="search-option">
               <label for="kids">Дети:</label>
+              <button class="min-max" type="button">-</button>
               <input class="search-input" type="number" name="kids" id="kids" min="0" max="10" step="1" placeholder="0">
+              <button class="min-max" type="button">+</button>
             </li>
           </ul>
           <button type="submit" class="search-button">Найти</button>
