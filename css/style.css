@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .greeting-picture {
   width: 1200px;
   height: 800px;
@@ -251,6 +255,16 @@ a {
   background-color: #ffffff;
 }
 
+/* Прописать позже
+.sorting a {
+  color:
+}
+
+.navigation {
+
+}
+*/
+
 .hotels-list {
   list-style: none;
 }
@@ -275,7 +289,8 @@ a {
   background-color: #ffffff;
 }
 
-.hotels-type, .hotels-price {
+.hotels-type,
+.hotels-price {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -325,4 +340,258 @@ a {
   font-weight: regular;
   text-transform: uppercase;
   background-color: #f2f2f2;
+}
+
+/*Сеточные стили*/
+html,
+body {
+  min-width: 1280px;
+  min-height: 2762px;
+}
+
+body {
+  /*Временно для сетки
+  background-image: url("../img/sedona-hotels.jpg");
+  background-size: 1280px auto;
+  background-repeat: no-repeat;*/
+}
+
+.main-header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1px;
+  justify-content: center;
+  /*временно для сетки*/
+  max-height: 56px;
+  outline: 3px solid red;
+}
+
+.main-navigation {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+ /* Временно для сетки */
+   min-height: 56px;
+   background-color: transparent;
+   outline: 3px solid green;
+}
+
+.site-navigation {
+  width: 478px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 56px;
+  outline: 3px solid brown;
+}
+
+.main-header-logo {
+  width: 140px;
+  min-height: 72px;
+  /* Временно для сетки */
+  outline: 3px solid blue;
+}
+
+.container-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1px;
+  /*временно для сетки*/
+  min-height: 1820px;
+  outline: 3px dotted pink;
+}
+
+.greeting {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4px;
+/* Временно для сетки */
+  min-height: 717px;
+  outline: 3px solid brown;
+}
+
+.greeting-picture {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 505px;
+  /* Временно для сетки */
+  outline: 3px solid blue;
+}
+
+.greeting-text {
+  width: 459px;
+  height: 353px;
+  /* Временно для сетки */
+  outline: 3px solid black;
+}
+
+.sedona-text {
+  width: 1200px;
+  height: 216px;
+  /* Временно для сетки */
+  outline: 5px dotted red;
+  text-align: center;
+}
+
+.features {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+/* Временно для сетки */
+  min-height: 1098px;
+  outline: 3px solid orange;
+}
+
+.lookuphotels {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1px;
+  /* Временно для сетки */
+  min-height: 761px;
+  outline: 3px solid black;
+}
+
+.modal-search {
+    width: 568px;
+    height: 481px;
+    display: flex;
+    flex-direction: column;
+    /* Временно для сетки */
+    outline: 3px solid green;
+}
+
+.search-button-in-sedona,
+.search-in-sedona {
+  width: 568px;
+  height: 86px;
+  /* Временно для сетки */
+  outline: 5px dotted red;
+}
+
+.search-form {
+  width: 568px;
+  height: 395px;
+  /* Временно для сетки */
+  outline: 5px dotted blue;
+}
+
+.container-hotels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /*временно для сетки*/
+  min-height: 657px;
+  outline: 3px dotted black;
+}
+
+.filters {
+  width: 1200px;
+  height: 217px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1px;
+  background-image: url("../img/filter_background.jpg");
+  background-size: 1200px 217px;
+  background-repeat: no-repeat;
+  /*временно для сетки*/
+  outline: 3px dotted green;
+}
+
+.filter-results {
+  width: 1200px;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  /*временно для сетки*/
+  outline: 3px dotted red;
+}
+
+.results-item {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  /*временно для сетки*/
+  outline: 3px dotted yellow;
+}
+
+.sorting {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  /*временно для сетки*/
+  min-height: 82px;
+  outline: 3px dotted brown;
+}
+
+.hotels-list {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  /*временно для сетки*/
+  min-height: 150px;
+  outline: 3px dotted black;
+}
+
+.main-footer {
+  padding: 36px 0;
+  margin-top: 1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Временно для сетки */
+  min-height: 120px;
+  outline: 3px solid red;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 1200px;
+  /*временно для сетки*/
+  max-height: 47px;
+  outline: 3px dotted blue;
+}
+.footer-contacts {
+  width: 135px;
+  margin: 0;
+  margin-left: 133px;
+  /* Временно для сетки */
+  min-height: 23px;
+  outline: 3px solid green;
+}
+
+.footer-social {
+  width: 149px;
+  margin-left: 257px;
+  /* Временно для сетки */
+  min-height: 47px;
+  outline: 3px solid black;
+}
+
+.footer-copyright {
+  width: 195px;
+  margin: 0;
+  margin-left: 229px;
+  /* Временно для сетки */
+  background: none;
+  min-height: 41px;
+  outline: 3px solid brown;
 }
