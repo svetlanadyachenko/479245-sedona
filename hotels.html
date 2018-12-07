@@ -9,17 +9,15 @@
   </head>
   <body>
     <header class="main-header">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logosedona.png" width="140" height="71" alt="Логотип Sedona">
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photoandvideo.html">Фото и видео</a></li>
-        </ul>
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logosedona.png" width="140" height="71" alt="Логотип Sedona">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="mapofstate.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+          <li class="site-navigation-item"><a href="photoandvideo.html">Фото и видео</a></li>
+          <li class="site-navigation-item"><a href="mapofstate.html">Карта штата</a></li>
+          <li class="site-navigation-item site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -30,8 +28,8 @@
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-item">
-            <legend>Инфраструктура:</legend>
-            <ul>
+            <legend class="legend-name">Инфраструктура:</legend>
+            <ul class="filter-item-input">
               <li class="filter-option">
                 <label for="pool">Бассейн</label>
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
@@ -47,8 +45,8 @@
             </ul>
           </fieldset>
           <fieldset class="filter-item">
-            <legend>Тип жилья:</legend>
-            <ul>
+            <legend class="legend-name">Тип жилья:</legend>
+            <ul class="filter-item-input">
               <li class="filter-option">
                 <label for="hotel">Гостиница</label>
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
@@ -64,8 +62,8 @@
             </ul>
           </fieldset>
           <fieldset class="filter-item">
-            <legend>Стоимость в сутки (Р):</legend>
-            <ul>
+            <legend class="legend-name">Стоимость в сутки (Р):</legend>
+            <ul class="filter-item-input">
               <li class="cost-filter">
                 <label for="costfrom">От</label>
                 <input class="cost" name="costfrom" id="costfrom" type="number" min="0" max="4000" step="100">
@@ -92,9 +90,11 @@
 
         <div class="results-item">
           <h2 class="visually-hidden">Результаты фильтра</h2>
-              <ul class="sorting">
-                <li class="sorting-item">Найдено: 3</li>
-                <li class="sorting-item">Сортировка:
+          <div class="sorting">
+            <span class="found">Найдено: 3</span>
+            <span class="sorting-span">Сортировка:</span>
+              <ul class="sorting-list">
+                <li class="sorting-item">
                   <a class="sorting-item-current" href="#">По цене</a>
                 </li>
                 <li class="sorting-item">
@@ -103,6 +103,8 @@
                 <li class="sorting-item">
                   <a href="#">По рейтингу</a>
                 </li>
+              </ul>
+              <ul>
                 <li>
                   <a class="navigation" href="#">
                     <img src="img/icon-up-dir.svg" width="auto" height="auto" alt="Вверх">
@@ -114,17 +116,18 @@
                   </a>
                 </li>
               </ul>
+            </div>
           </div>
 
           <div class="results-item">
             <h2 class="visually-hidden">Список гостиниц</h2>
-            <ul class="hotels-list">
-              <li class="hotels-item">
+            <div class="hotels-list">
+              <div class="hotels-item">
                 <p class="hotels-item-image">
                   <img src="img/amararesort&spa.jpg" width="auto" height="auto" alt="Amara Resort & SPA">
                 </p>
-              </li>
-              <li class="hotels-item">
+              </div>
+              <div class="hotels-item">
                 <p class="hotels-item-price">
                   <a class="hotels-info" href="#">Amara Resort & SPA</a><br>
                   <span class="hotels-type">Гостиница</span>
@@ -132,8 +135,8 @@
                   <a class="button" href="#">Подробнее</a>
                   <a class="button reserve" href="#">Забронировать</a>
                 </p>
-              </li>
-              <li class="hotels-item">
+              </div>
+              <div class="hotels-item">
                 <p>
                   <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
                   <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
@@ -141,19 +144,19 @@
                   <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
                 </p>
                 <span class="reyting">Рейтинг: 8,5</span>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
           <div class="results-item">
             <h2 class="visually-hidden">Список гостиниц</h2>
-            <ul class="hotels-list">
-              <li class="hotels-item">
+            <div class="hotels-list">
+              <div class="hotels-item">
                 <p class="hotels-item-image">
                   <img src="img/desertquailinn.jpg" width="auto" height="auto" alt="Desert Quail INN">
                 </p>
-              </li>
-              <li class="hotels-item">
+              </div>
+              <div class="hotels-item">
                 <p class="hotels-item-price">
                   <a class="hotels-info" href="#">Desert Quail INN</a><br>
                   <span class="hotels-type">Мотель</span>
@@ -161,27 +164,27 @@
                   <a class="button" href="#">Подробнее</a>
                   <a class="button reserve" href="#">Забронировать</a>
                 </p>
-              </li>
-              <li class="hotels-item">
+              </div>
+              <div class="hotels-item">
                 <p>
                   <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
                   <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
                   <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
                 </p>
                 <span class="reyting">Рейтинг: 8,9</span>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
           <div class="results-item">
             <h2 class="visually-hidden">Список гостиниц</h2>
-            <ul class="hotels-list">
-              <li class="hotels-item">
+            <div class="hotels-list">
+              <div class="hotels-item">
                 <p class="hotels-item-image">
                   <img src="img/villasatpocodiablo.jpg" width="auto" height="auto" alt="Villas at Poco Diablo">
                 </p>
-              </li>
-              <li class="hotels-item">
+              </div>
+              <div class="hotels-item">
                 <p class="hotels-item-price">
                   <a class="hotels-info" href="#">Villas at Poco Diablo</a><br>
                   <span class="hotels-type">Апартаменты</span>
@@ -189,15 +192,15 @@
                   <a class="button" href="#">Подробнее</a>
                   <a class="button reserve" href="#">Забронировать</a>
                 </p>
-              </li>
-              <li class="hotels-item">
+              </div>
+              <div class="hotels-item">
                 <p>
                   <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
                   <img src="img/star.svg" width="auto" height="auto" alt="Звезда">
                 </p>
                 <span class="reyting">Рейтинг: 9,2</span>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
       </section>
 

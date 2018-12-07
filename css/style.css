@@ -52,8 +52,12 @@ a {
   background-color: #ffffff;
 }
 
-.site-navigation a:hover,
 .site-navigation a:focus {
+  color: #766357;
+  background-color: #ffffff;
+}
+
+.site-navigation a:hover {
   color: #81b3d2;
   background-color: #ffffff;
 }
@@ -255,15 +259,31 @@ a {
   background-color: #ffffff;
 }
 
-/* Прописать позже
 .sorting a {
-  color:
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: regular;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.3);
+  text-decoration-style: dotted;
+}
+.sorting a:focus {
+  color: #81b3d2;
+  text-decoration: none;
+}
+.sorting a:hover {
+  color: #81b3d2;
+  text-decoration: underline;
+  text-decoration-color: #81b3d2;
+  text-decoration-style: dotted;
 }
 
-.navigation {
-
+.sorting a:active {
+  color: #000000;
+  text-decoration: none;
 }
-*/
 
 .hotels-list {
   list-style: none;
@@ -286,16 +306,6 @@ a {
 
 .hotels-info:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: #ffffff;
-}
-
-.hotels-type,
-.hotels-price {
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-  font-weight: regular;
-  text-transform: uppercase;
   background-color: #ffffff;
 }
 
@@ -342,7 +352,6 @@ a {
   background-color: #f2f2f2;
 }
 
-/*Сеточные стили*/
 html,
 body {
   min-width: 1280px;
@@ -358,7 +367,7 @@ body {
 
 .main-header {
   display: flex;
-  width: 100%;
+
   margin-bottom: 1px;
   justify-content: center;
   /*временно для сетки*/
@@ -369,7 +378,6 @@ body {
 .main-navigation {
   width: 1200px;
   display: flex;
-  justify-content: space-between;
  /* Временно для сетки */
    min-height: 56px;
    background-color: transparent;
@@ -377,7 +385,9 @@ body {
 }
 
 .site-navigation {
-  width: 478px;
+  width: 1200px;
+  display: flex;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -386,9 +396,23 @@ body {
   outline: 3px solid brown;
 }
 
+.site-navigation-item {
+  width: 239px;
+  text-align: center;
+  min-height: 56px;
+  outline: 3px solid brown;
+}
+
+.site-navigation-item:nth-child(2) {
+  margin-right: 244px;
+}
+
 .main-header-logo {
   width: 140px;
-  min-height: 72px;
+  height: 72px;
+  display: block;
+  position: absolute;
+  left: 50% auto;
   /* Временно для сетки */
   outline: 3px solid blue;
 }
@@ -436,7 +460,7 @@ body {
   width: 1200px;
   height: 216px;
   /* Временно для сетки */
-  outline: 5px dotted red;
+  outline: 3px dotted red;
   text-align: center;
 }
 
@@ -476,14 +500,14 @@ body {
   width: 568px;
   height: 86px;
   /* Временно для сетки */
-  outline: 5px dotted red;
+  outline: 3px dotted red;
 }
 
 .search-form {
   width: 568px;
   height: 395px;
   /* Временно для сетки */
-  outline: 5px dotted blue;
+  outline: 3px dotted blue;
 }
 
 .container-hotels {
@@ -509,6 +533,37 @@ body {
   outline: 3px dotted green;
 }
 
+.filter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.filter-item {
+  border: none;
+}
+
+.filter-item-input {
+  list-style: none;
+  color: #ffffff;
+}
+
+.legend-name {
+  font-style: PT Sans, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.filter-button {
+  font-style: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+
 .filter-results {
   width: 1200px;
   height: 540px;
@@ -527,15 +582,54 @@ body {
 }
 
 .sorting {
-  margin: 0;
-  padding: 0;
   width: 1200px;
-  list-style: none;
   display: flex;
   justify-content: space-around;
   /*временно для сетки*/
   min-height: 82px;
   outline: 3px dotted brown;
+}
+
+.sorting-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    /*временно для сетки*/
+  outline: 3px solid green;
+}
+
+.sorting-item {
+  margin: 0;
+  margin-right: 30px;
+}
+
+.found {
+  font-style: PT Sans, Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.sorting-span {
+  font-style: PT Sans, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: regular;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.hotels-type,
+.hotels-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: regular;
+  text-transform: uppercase;
+  background-color: #ffffff;
 }
 
 .hotels-list {
