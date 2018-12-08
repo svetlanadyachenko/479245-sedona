@@ -28,6 +28,7 @@
         <div class="greeting-picture">
           <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
           <div class="greeting-text"></div>
+          <div class="greeting-mask"></div>
         </div>
         <div class="sedona-text">
           <h2>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
@@ -93,18 +94,20 @@
       </section>
 
       <section class="lookuphotels">
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
-        <section class="modal modal-search">
-          <div class="search-button-in-sedona">
+        <div class="lookuphotels-text">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="lookuphotels-button">
             <button class="search-in-sedona" type="button">Поиск гостиницы в Седоне</button>
           </div>
+        </div>
+
+        <section class="modal modal-search">
           <div class="search-form">
             <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset>
+              <fieldset class="search-item">
                 <ul>
                   <li class="search-option">
                     <label for="datein">Дата заезда:</label>
@@ -129,17 +132,19 @@
                     <button class="min-max" type="button">+</button>
                   </li>
                 </ul>
-                <button type="submit" class="search-button">Найти</button>
               </fieldset>
+              <button type="submit" class="search-button">Найти</button>
             </form>
           </div>
         </section>
+
         <section class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <p>
             <img src="img/map.jpg" width="auto" height="auto" alt="Карта Седоны">
           </p>
         </section>
+
       </section>
     </main>
 
@@ -155,12 +160,9 @@
             <li><a class="social-button" href="#">YouTube</a></li>
           </ul>
         </div>
-        <p class="footer-copyright">
-          <span>WebsiteBy</span>
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
-          </a>
-        </p>
+        <div class="footer-copyright">
+          <a class="copyright-button button" href="https://htmlacademy.ru/intensive/htmlcss">WebsiteBy</a>
+        </div>
       </div>
     </footer>
 
