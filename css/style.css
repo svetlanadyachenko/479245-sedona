@@ -5,7 +5,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
@@ -325,6 +325,7 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
   border: none;
 }
+
 .search input[type="date"]:nth-child(2) {
   margin-top: 29px;
 }
@@ -408,49 +409,10 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 
-.filters {
-  width: 1200px;
-  height: 217px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1px;
-  background-image: url("../img/filter_background.jpg");
-  background-size: 1200px 217px;
-  background-repeat: no-repeat;
-  /*временно для сетки*/
-  outline: 3px dotted green;
-}
 
-.filter {
-  display: flex;
-  justify-content: space-around;
-}
 
-.filter-item {
-  border: none;
-}
 
-.filter-item-input {
-  list-style: none;
-  color: #ffffff;
-}
 
-.legend-name {
-  font-style: "PT Sans", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.filter-button {
-  font-style: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  background-color: transparent;
-}
 
 .container-hotels {
   display: flex;
@@ -459,7 +421,181 @@ input[type="radio"].visually-hidden {
   width: 100%;
   /*временно для сетки*/
   min-height: 657px;
-  outline: 3px dotted black;
+  outline: 10px dotted black;
+}
+
+.filters {
+  width: 1200px;
+  height: 217px;
+  display: flex;
+  margin-bottom: 1px;
+  background-image: url("../img/filter_background.jpg");
+  background-size: 1200px 217px;
+  background-repeat: no-repeat;
+  /*временно для сетки*/
+  outline: 3px dotted green;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-checkbox {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 73px;
+  margin-top: 15px;
+  width: 528px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-checkbox-left,
+.filter-checkbox-right {
+  display: block;
+}
+
+
+
+.filter-checkbox-input {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-checkbox-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-option label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+
+
+
+
+
+.filter-range {
+  display: inline-block;
+  width: 330px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 .filter-results {
@@ -691,23 +827,32 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 149px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
 }
 
 .social-button {
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
 }
 
 .social-button:hover,
 .socal-button:focus {
-  color: #ffffff;
   background-color: #669ec0;
 }
 
-.social-button:active {
-  color: rgba(255, 255, 255, 0.3);
+.social-button:active path {
   background-color: #5496bd;
+  fill: rgba(136, 182, 209, 0.3);
 }
 
 .footer-copyright {
@@ -747,33 +892,15 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.copyright-button:hover::after {
-  content: "";
-  position: absolute;
-  top: -7px;
-  left: 74px;
-  width: 115px;
-  height: 41px;
-  background-image: url("../img/logo-name-blue.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /*временно*/
-  background-color: #000000;
+.copyright-button:hover::after path,
+.copyright-button:focus::after path {
+  fill: #81b3d2;
 }
 
-.copyright-button:active::after {
-  content: "";
-  position: absolute;
-  top: -7px;
-  left: 74px;
-  width: 115px;
-  height: 41px;
-  background-image: url("../img/logo-name-grey.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  /*временно*/
-  background-color: #000000;
+.copyright-button:active::after path{
+  fill: #bdbbbc;
 }
+
 /* .footer-copyright a {
   color: #000000;
   background-color: #ffffff;
