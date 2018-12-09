@@ -585,6 +585,21 @@ input[type="radio"].visually-hidden {
   background: #ffffff;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .filter-results {
   width: 1200px;
   height: 540px;
@@ -595,82 +610,103 @@ input[type="radio"].visually-hidden {
   outline: 3px dotted red;
 }
 
-.results-item {
+.sorting-results {
   width: 1200px;
   display: flex;
-  flex-direction: column;
-  /*временно для сетки*/
-  outline: 3px dotted yellow;
-}
-
-.sorting {
-  width: 1200px;
-  display: flex;
-  justify-content: space-around;
-  /*временно для сетки*/
-  min-height: 82px;
-  outline: 3px dotted brown;
-}
-
-.sorting-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-    /*временно для сетки*/
-  outline: 3px solid green;
+  justify-content: space-between;
 }
 
-.sorting-item {
-  margin: 0;
-  margin-right: 30px;
+.sorting-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 528px;
+  margin-left: 73px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .found {
+  display: block;
   font-style: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .sorting-span {
+  display: block;
   font-style: "PT Sans", Arial, sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: regular;
   color: #000000;
-  background-color: #ffffff;
 }
 
-.sorting a {
+.sorting-list {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+}
+
+.sorting-item {
+  display: flex;
+  margin-right: 32px;
+}
+
+.sorting-item a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: regular;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: underline;
-  text-decoration-color: rgba(0, 0, 0, 0.3);
+  text-decoration-color: #81b3d2;
   text-decoration-style: dotted;
 }
 
-.sorting a:focus {
+.sorting-item a:focus {
   color: #81b3d2;
   text-decoration: none;
 }
 
-.sorting a:hover {
+.sorting-item a:hover {
   color: #81b3d2;
   text-decoration: underline;
   text-decoration-color: #81b3d2;
   text-decoration-style: dotted;
 }
 
-.sorting a:active {
+.sorting-item a:active {
   color: #000000;
   text-decoration: none;
 }
+
+.navigation-button {
+  width: 33px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 73px;
+}
+
+.navigation path {
+  fill: #cacaca;
+}
+
+.navigation:hover path {
+  fill: #231f20;
+}
+
+.navigation:active path,
+.navigation:focus path {
+  fill: #81b3d2;
+}
+
+
+
 
 .hotels-list {
   margin: 0;

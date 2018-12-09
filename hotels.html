@@ -25,108 +25,98 @@
 <main class="container-hotels">
 <h1 class="visually-hidden">Гостиницы</h1>
 
-<section class="filters">
-<h2 class="visually-hidden">Фильтр гостиниц</h2>
+  <section class="filters">
+  <h2 class="visually-hidden">Фильтры поиска гостиниц</h2>
 
-<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+    <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
 
-<div class="filter-checkbox">
+      <div class="filter-checkbox">
 
-  <div class="filter-checkbox-left">
-    <div class="filter-checkbox-title">Инфраструктура:</div>
-      <ul class="filter-checkbox-input">
-        <li class="filter-option">
-          <label for="pool">Бассейн</label>
-          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
-        </li>
-        <li class="filter-option">
-            <label for="parking">Парковка</label>
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
-        </li>
-        <li class="filter-option">
-            <label for="wi-fi">WI-FI</label>
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
-        </li>
-      </ul>
-  </div>
+        <div class="filter-checkbox-left">
+          <div class="filter-checkbox-title">Инфраструктура:</div>
+            <ul class="filter-checkbox-input">
+              <li class="filter-option">
+                <label for="pool">Бассейн</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+              </li>
+              <li class="filter-option">
+                  <label for="parking">Парковка</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
+              </li>
+              <li class="filter-option">
+                  <label for="wi-fi">WI-FI</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+              </li>
+            </ul>
+        </div>
 
-  <div class="filter-checkbox-right">
-    <div class="filter-checkbox-title">Тип жилья:</div>
-      <ul class="filter-checkbox-input">
-        <li class="filter-option">
-          <label for="hotel">Гостиница</label>
-          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
-        </li>
-        <li class="filter-option">
-          <label for="motel">Мотель</label>
-          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
-        </li>
-        <li class="filter-option">
-          <label for="apartments">Апартаменты</label>
-          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
-        </li>
-      </ul>
-  </div>
+        <div class="filter-checkbox-right">
+          <div class="filter-checkbox-title">Тип жилья:</div>
+            <ul class="filter-checkbox-input">
+              <li class="filter-option">
+                <label for="hotel">Гостиница</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+              </li>
+              <li class="filter-option">
+                <label for="motel">Мотель</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+              </li>
+              <li class="filter-option">
+                <label for="apartments">Апартаменты</label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
+              </li>
+            </ul>
+        </div>
 
-</div>
+      </div>
 
-<div class="filter-range">
-  <div class="filter-range-title">Стоимость в сутки (р):</div>
-  <div class="price-controls">
-    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-  </div>
-  <div class="range-controls">
-    <div class="scale">
-      <div class="bar"></div>
-    </div>
-    <div class="range-toggle range-toggle-min"></div>
-    <div class="range-toggle range-toggle-max"></div>
-  </div>
-  <button class="btn-transparent" type="submit">Показать</button>
-</div>
-
-</form>
-</section>
-
-
-
-
-      <section class="filter-results">
-
-        <div class="results-item">
-          <h2 class="visually-hidden">Результаты фильтра</h2>
-          <div class="sorting">
-            <span class="found">Найдено: 3</span>
-            <span class="sorting-span">Сортировка:</span>
-              <ul class="sorting-list">
-                <li class="sorting-item">
-                  <a class="sorting-item-current" href="#">По цене</a>
-                </li>
-                <li class="sorting-item">
-                  <a href="#">По типу</a>
-                </li>
-                <li class="sorting-item">
-                  <a href="#">По рейтингу</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a class="navigation" href="#">
-                    <img src="img/icon-up-dir.svg" width="auto" height="auto" alt="Вверх">
-                  </a>
-                </li>
-                <li>
-                  <a class="navigation" href="#">
-                    <img src="img/icon-down-dir.svg" width="auto" height="auto" alt="Вниз">
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <div class="filter-range">
+        <div class="filter-range-title">Стоимость в сутки (р):</div>
+        <div class="price-controls">
+          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
           </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+        <button class="btn-transparent" type="submit">Показать</button>
+      </div>
 
-          <div class="results-item">
-            <h2 class="visually-hidden">Список гостиниц</h2>
+    </form>
+  </section>
+
+
+
+
+
+
+
+  <section class="filter-results">
+
+    <div class="sorting-results">
+    <h2 class="visually-hidden">Сортировка результатов поиска</h2>
+      <div class="sorting-info">
+        <span class="found">Найдено: 3</span>
+        <span class="sorting-span">Сортировка:</span>
+        <ul class="sorting-list">
+          <li class="sorting-item"><a class="sorting-item-current" href="#">По цене</a></li>
+          <li class="sorting-item"><a href="#">По типу</a></li>
+          <li class="sorting-item"><a href="#">По рейтингу</a></li>
+        </ul>
+      </div>
+
+      <div class="navigation-button">
+        <a class="navigation" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+        <a class="navigation" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
+      </div>
+    </div>
+
+    <div class="results">
+    <h2 class="visually-hidden">Список гостиниц</h2>
             <div class="hotels-list">
               <div class="hotels-item">
                 <p class="hotels-item-image">
@@ -152,7 +142,9 @@
                 <span class="reyting">Рейтинг: 8,5</span>
               </div>
             </div>
-          </div>
+    </div>
+
+
 
           <div class="results-item">
             <h2 class="visually-hidden">Список гостиниц</h2>
