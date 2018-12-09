@@ -110,25 +110,25 @@
                 <ul class="search-item">
                   <li class="search-option">
                     <label for="datein">Дата заезда:</label>
-                    <input class="search-input" type="date" name="datein" id="datein">
-                    <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
+                    <input class="search-input" type="text" name="datein" id="datein" placeholder="24 АПРЕЛЯ 2017">
                   </li>
                   <li class="search-option">
                     <label for="dateout">Дата выезда:</label>
-                    <input class="search-input" type="date" name="dateout" id="dateout">
-                    <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
+                    <input class="search-input" type="text" name="dateout" id="dateout" placeholder="4 ИЮЛЯ 2017">
                   </li>
                   <li class="search-option">
-                    <label for="adults">Взрослые:</label>
-                    <button class="min-max" type="button">-</button>
-                    <input class="search-input" type="number" name="adults" id="adults" min="1" max="10" step="1" placeholder="2">
-                    <button class="min-max" type="button">+</button>
-                  </li>
-                  <li class="search-option">
-                    <label for="kids">Дети:</label>
-                    <button class="min-max" type="button">-</button>
-                    <input class="search-input" type="number" name="kids" id="kids" min="0" max="10" step="1" placeholder="0">
-                    <button class="min-max" type="button">+</button>
+                    <p class="number">
+                      <label for="adults">Взрослые:</label>
+                      <button class="min" type="button">-</button>
+                      <input class="search-input" type="text" name="adults" id="adults" min="1" max="10" step="1" placeholder="2">
+                      <button class="max" type="button">+</button>
+                    </p>
+                    <p class="number">
+                      <label for="kids">Дети:</label>
+                      <button class="min" type="button">-</button>
+                      <input class="search-input" type="text" name="kids" id="kids" min="0" max="10" step="1" placeholder="0">
+                      <button class="max" type="button">+</button>
+                    </p>
                   </li>
                 </ul>
               <button type="submit" class="search-button">Найти</button>
