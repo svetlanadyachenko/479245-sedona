@@ -260,8 +260,6 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   background-color: #ffffff;
   position: relative;
-  /* Временно для сетки */
-  outline: 5px dotted red;
 }
 
 .search-item {
@@ -335,7 +333,7 @@ input[type="radio"].visually-hidden {
 }
 .cal-2 {
   right: 64px;
-  top: 117px;
+  top: 120px;
 }
 
 .calendar path {
