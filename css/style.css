@@ -127,14 +127,6 @@ input[type="radio"].visually-hidden {
   background-position: top center;
 }
 
-.greeting-text {
-  width: 459px;
-  height: 353px;
-  background-image: url("../img/intro-welcome.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 .greeting-mask {
   position: absolute;
   top: 504px;
@@ -153,7 +145,6 @@ input[type="radio"].visually-hidden {
 }
 
 .sedona-text h2 {
-  margiin: 0;
   margin-top: 61px;
   font-style: "PT Sans", Arial, sans-serif;
   font-size: 21px;
@@ -268,18 +259,6 @@ input[type="radio"].visually-hidden {
   padding-left: 97px;
   padding-right: 97px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .lookuphotels {
   width: 1200px;
@@ -430,25 +409,26 @@ input[type="radio"].visually-hidden {
   right: 64px;
   top: 50px;
 }
+
 .cal-2 {
   right: 64px;
   top: 120px;
 }
 
-.calendar path {
+.calendar svg {
   fill: #cacaca;
 }
 
-.calendar path:hover {
+.calendar svg:hover {
   fill: #000000;
 }
 
-.calendar path:active {
+.calendar svg:active {
   fill: #81b3d2;
 }
 
 .number {
-  display: inline-block;
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -485,9 +465,9 @@ input[type="radio"].visually-hidden {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   color: #a9a9a9;
-  font-weight: bold;
+  font-weight: regular;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
@@ -503,7 +483,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 26px;
   color: #a9a9a9;
-  font-weight: bold;
+  font-weight: regular;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
@@ -530,7 +510,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 55px;
   width: 458px;
   height: 58px;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
