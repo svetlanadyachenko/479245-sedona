@@ -63,7 +63,6 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
-  display: block;
   color: #000000;
 }
 
@@ -260,6 +259,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
+  position: relative;
   /* Временно для сетки */
   outline: 5px dotted red;
 }
@@ -295,7 +295,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.search-option input[type="text"] {
+.date-input[type="text"] {
   display: inline-block;
   width: 346px;
   height: 38px;
@@ -310,27 +310,53 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
   border: none;
   border-radius: 2px;
-  position: relative;
 }
 
-.search-option input[type="text"]:hover {
+.date-input[type="text"]:hover {
   color: #000000;
   background-color: #ebebeb;
 }
 
-.search-option input[type="text"]:focus {
+.date-input[type="text"]:focus {
   color: #000000;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
-.search-option .number {
+.calendar {
+  position: absolute;
+  width: 21px;
+  height: 22px;
+}
+
+.cal-1 {
+  right: 64px;
+  top: 50px;
+}
+.cal-2 {
+  right: 64px;
+  top: 117px;
+}
+
+.calendar path {
+  fill: #cacaca;
+}
+
+.calendar path:hover {
+  fill: #000000;
+}
+
+.calendar path:active {
+  fill: #81b3d2;
+}
+
+.number {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
 
-.number input[type="text"] {
+.number-input[type="text"] {
   display: inline-block;
   width: 38px;
   height: 38px;
@@ -347,8 +373,8 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.number input[type="text"]:hover,
-.number input[type="text"]:focus {
+.number-input[type="text"]:hover,
+.number-input[type="text"]:focus {
   background-color: #f2f2f2;
   border: none;
   outline: none;
