@@ -435,9 +435,11 @@ input[type="radio"].visually-hidden {
 
 .date-input[type="text"] {
   display: inline-block;
+  box-sizing: border-box;
   width: 346px;
   height: 38px;
   padding-left: 13px;
+  padding-right: 35px;
   margin-bottom: 30px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -457,7 +459,7 @@ input[type="radio"].visually-hidden {
 .date-input[type="text"]:focus {
   color: #000000;
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
 }
 
 .calendar {
@@ -490,6 +492,7 @@ input[type="radio"].visually-hidden {
 
 .number {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -525,8 +528,8 @@ input[type="radio"].visually-hidden {
   margin-left: 26px;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 28px;
+  line-height: 26px;
   color: #a9a9a9;
   font-weight: regular;
   text-transform: uppercase;
@@ -551,17 +554,21 @@ input[type="radio"].visually-hidden {
 }
 
 .min:hover,
-.min:focus,
+.min:focus {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
 .max:hover,
 .max:focus {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .min:active,
 .max:active {
   color: #81b3d2;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   outline: none;
 }
 
