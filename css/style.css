@@ -177,16 +177,23 @@ input[type="radio"].visually-hidden {
 .features-list {
   display: flex;
   width: 1200px;
-  max-height: 256px;
+  height: 256px;
+}
+
+.features-image {
+  width: 800px;
+  height: 256px;
 }
 
 .features-item {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   width: 400px;
   background-color: #81b3d2;
   color: #ffffff;
-  text-align: center;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 46px;
@@ -194,6 +201,9 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item h3 {
+  display: block;
+  width: 160px;
+  text-align: center;
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
@@ -203,6 +213,8 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item p {
+  display: block;
+  text-align: center;
   margin: 0;
   margin-top: 30px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -276,7 +288,10 @@ input[type="radio"].visually-hidden {
 }
 
 .other-features-item {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 400px;
   box-sizing: border-box;
   padding-top: 50px;
@@ -286,6 +301,7 @@ input[type="radio"].visually-hidden {
 
 .other-features-item h3 {
   display: block;
+  width: 150px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
