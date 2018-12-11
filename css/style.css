@@ -624,12 +624,6 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 
-
-
-
-
-
-
 .container-hotels {
   display: flex;
   flex-direction: column;
@@ -638,32 +632,29 @@ input[type="radio"].visually-hidden {
 }
 
 .filters {
-  width: 1200px;
   display: flex;
-  box-sizing: border-box;
-  padding: 35px 74px;
+  width: 1200px;
   background-image: url("../img/filter_background.jpg");
-  background-size: 1200px 217px;
+  background-size: 1200px auto;
   background-repeat: no-repeat;
-  /*временно для сетки*/
-  outline: 5px dotted red;
-  height: 217px;
 }
 
 .filters-form {
   display: flex;
+  width: 1200px;
   justify-content: space-between;
   align-items: stretch;
-  outline: 1px dotted white;
+  box-sizing: border-box;
+  padding: 35px 74px;
 }
 
 .filter-checkbox {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   width: 400px;
   color: #ffffff;
   text-transform: uppercase;
-  outline: 3px solid brown;
 }
 
 .filter-checkbox-left,
@@ -671,39 +662,48 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  outline: 3px solid green;
-}
-
-.filter-checkbox-input {
-  display: block;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  outline: 3px dotted blue;
 }
 
 .filter-checkbox-title {
+  display: flex;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 600;
   font-size: 16px;
+  font-weight: bold;
   line-height: 21px;
-  outline: 3px solid pink;
+}
+
+.filter-checkbox-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-option {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 23px;
 }
 
 .filter-option label {
   display: flex;
-  flex-direction: column;
-  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
+  margin-left: 15px;
+  font-weight: regular;
   font-size: 14px;
   line-height: 21px;
-  outline: 3px solid green;
 }
 
-
-
-
-
-
-
+.filter-input {
+  display: block;
+  width: 23px;
+  height: 23px;
+}
 
 .filter-range {
   display: flex;
@@ -711,7 +711,6 @@ input[type="radio"].visually-hidden {
   width: 330px;
   color: #ffffff;
   text-transform: uppercase;
-  outline: 3px solid red;
 }
 
 .filter-range-title {
@@ -823,21 +822,6 @@ input[type="radio"].visually-hidden {
   background: #ffffff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .filter-results {
   width: 1200px;
   display: flex;
@@ -891,8 +875,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin-right: 32px;
 }
-
-
 
 .sorting-item a {
   font-family: "PT Sans", Arial, sans-serif;
