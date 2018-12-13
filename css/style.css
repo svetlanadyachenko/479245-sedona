@@ -2,7 +2,7 @@ body {
   width: 1200px;
   margin: auto;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -29,8 +29,8 @@ input[type="radio"].visually-hidden {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -47,18 +47,18 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   font-size: 14px;
   line-height: 26px;
-  color: #000000;
   font-weight: bold;
+  color: #000000;
   background-color: #ffffff;
 }
 
 .site-navigation {
-  margin: 0;
-  padding: 0;
-  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -81,8 +81,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-item {
   display: block;
-  margin: 0;
   width: 239px;
+  margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
@@ -93,11 +93,11 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo {
-  width: 140px;
-  height: 72px;
   display: block;
   position: absolute;
   left: auto;
+  width: 140px;
+  height: 72px;
 }
 
 .container-index {
@@ -109,17 +109,17 @@ input[type="radio"].visually-hidden {
 }
 
 .greeting {
-  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 1200px;
   background-color: #ffffff;
 }
 
 .greeting-picture {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 1200px;
   height: 504px;
   background-image: url("../img/background_photo_index.jpg");
@@ -139,19 +139,19 @@ input[type="radio"].visually-hidden {
 
 .sedona-text {
   display: block;
-  box-sizing: border-box;
   width: 1200px;
-  text-align: center;
-  background-color: #ffffff;
+  box-sizing: border-box;
   padding-top: 61px;
   padding-bottom: 56px;
   padding-left: 355px;
   padding-right: 356px;
+  text-align: center;
+  background-color: #ffffff;
 }
 
 .sedona-text h2 {
   margin: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -161,24 +161,23 @@ input[type="radio"].visually-hidden {
 .sedona-text p {
   margin: 0;
   margin-top: 30px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: regular;
+  font-weight: 400;
   color: #333333;
 }
 
 .features {
-  width: 1200px;
   display: flex;
   flex-direction: column;
+  width: 1200px;
   background-color: #ffffff;
 }
 
 .features-list {
   display: flex;
   width: 1200px;
-  height: 256px;
 }
 
 .features-image {
@@ -191,45 +190,45 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
   width: 400px;
-  background-color: #81b3d2;
-  color: #ffffff;
+  box-sizing: border-box;
   padding-left: 60px;
   padding-right: 60px;
-  padding-top: 46px;
-  padding-bottom: 64px;
+  padding-top: 36px;
+  padding-bottom: 54px;
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .features-item h3 {
   display: block;
   width: 160px;
-  text-align: center;
   margin: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
+  text-align: center;
 }
 
 .features-item p {
   display: block;
-  text-align: center;
   margin: 0;
   margin-top: 30px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: regular;
+  font-weight: 400;
   color: #ffffff;
+  text-align: center;
 }
 
 .devil-bridge {
   padding-left: 48px;
   padding-right: 49px;
-  padding-top: 49px;
-  padding-bottom: 65px;
+  padding-top: 39px;
+  padding-bottom: 50px;
 }
 
 .service {
@@ -239,18 +238,18 @@ input[type="radio"].visually-hidden {
 
 .service-list {
   display: block;
-  box-sizing: border-box;
   width: 400px;
-  background-color: #ffffff;
-  text-align: center;
+  box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 86px;
+  text-align: center;
+  background-color: #ffffff;
 }
 
 .service-list h3 {
   margin: 0;
   margin-top: 30px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -260,10 +259,10 @@ input[type="radio"].visually-hidden {
 .service-list p {
   margin: 0;
   margin-top: 30px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: regular;
+  font-weight: 400;
   color: #333333;
 }
 
@@ -305,7 +304,7 @@ input[type="radio"].visually-hidden {
   width: 150px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -317,12 +316,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-top: 30px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: regular;
-  text-align: center;
+  font-weight: 400;
   color: #333333;
+  text-align: center;
 }
 
 .third-features {
@@ -341,24 +340,23 @@ input[type="radio"].visually-hidden {
 }
 
 .lookuphotels {
-  width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1px;
+  width: 1200px;
   background-color: #ffffff;
 }
 
 .lookuphotels-text {
-  width: 1200px;
   display: block;
+  width: 1200px;
   text-align: center;
 }
 
 .lookuphotels-text h2 {
   margin: 0;
   margin-top: 57px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 26px;
   line-height: 26px;
   font-weight: bold;
@@ -367,21 +365,21 @@ input[type="radio"].visually-hidden {
 
 .lookuphotels-text p {
   margin-bottom: 52px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: regular;
+  font-weight: 400;
   color: #333333;
 }
 
 .search-in-sedona {
   width: 568px;
   height: 86px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
-  color: #ffffff;
   font-weight: bold;
+  color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   background-color: #766357;
@@ -402,36 +400,35 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-search {
-  width: 1200px;
-  height: 475px;
   display: flex;
   justify-content: center;
+  width: 1200px;
   background-color: #ffffff;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.modal-map {
+  width: 1200px;
+  height: 475px;
 }
 
 .search-form {
-  width: 568px;
-  height: 395px;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  width: 568px;
+  height: 395px;
   background-color: #ffffff;
-  position: relative;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .search-item {
   display: flex;
-  width: 458px;
   flex-direction: column;
-  list-style: none;
-  margin-top: 55px;
-  margin-left: 55px;
-  margin-right: 55px;
+  width: 458px;
+  margin: 55px;
   margin-bottom: 54px;
   padding: 0;
+  list-style: none;
 }
 
 .search-option {
@@ -444,28 +441,30 @@ input[type="radio"].visually-hidden {
 
 .search-option label {
   display: inline-block;
-  font-family: "PT Sans", Arial, sans-serif;
+  vertical-align: baseline;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: auto;
-  color: #000000;
   font-weight: bold;
+  color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
 }
 
 .date-input[type="text"] {
   display: inline-block;
-  box-sizing: border-box;
+  vertical-align: baseline;
   width: 346px;
   height: 38px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
   padding-left: 13px;
   padding-right: 35px;
-  margin-bottom: 30px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  color: #000000;
   font-weight: bold;
+  color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
@@ -521,15 +520,16 @@ input[type="radio"].visually-hidden {
 
 .number-input[type="text"] {
   display: inline-block;
+  vertical-align: baseline;
   width: 38px;
   height: 38px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  color: #000000;
   font-weight: bold;
+  color: #000000;
   text-transform: uppercase;
   text-align: center;
   background-color: #f2f2f2;
@@ -546,15 +546,16 @@ input[type="radio"].visually-hidden {
 
 .min {
   display: inline-block;
+  vertical-align: baseline;
   width: 38px;
   height: 38px;
   margin-left: 40px;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 28px;
   line-height: 26px;
+  font-weight: 400;
   color: #a9a9a9;
-  font-weight: regular;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
@@ -566,15 +567,16 @@ input[type="radio"].visually-hidden {
 
 .max {
   display: inline-block;
+  vertical-align: baseline;
   width: 38px;
   height: 38px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
   color: #a9a9a9;
-  font-weight: regular;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
@@ -610,15 +612,15 @@ input[type="radio"].visually-hidden {
 
 .search-button {
   display: block;
-  margin-left: 55px;
-  margin-bottom: 55px;
   width: 458px;
   height: 58px;
-  font-family: "PT Sans", Arial, sans-serif;
+  margin-left: 55px;
+  margin-bottom: 55px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
-  color: #ffffff;
   font-weight: bold;
+  color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   background-color: #81b3d2;
@@ -655,9 +657,9 @@ input[type="radio"].visually-hidden {
 
 .filters-form {
   display: flex;
-  width: 1200px;
   justify-content: space-between;
   align-items: stretch;
+  width: 1200px;
   box-sizing: border-box;
   padding: 35px 74px;
 }
@@ -673,7 +675,6 @@ input[type="radio"].visually-hidden {
 
 .filter-checkbox-left,
 .filter-checkbox-right {
-  width: auto;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -681,20 +682,19 @@ input[type="radio"].visually-hidden {
 
 .filter-checkbox-title {
   display: flex;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 600;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: bold;
   line-height: 21px;
+  font-weight: bold;
 }
 
 .filter-checkbox-input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .filter-option {
@@ -702,19 +702,19 @@ input[type="radio"].visually-hidden {
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 15px;
   padding: 5px 0;
   padding-right: 10px;
-  margin-top: 15px;
 }
 
 .input-label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: regular;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -727,8 +727,6 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  width: 27px;
-  height: 23px;
   cursor: pointer;
 }
 
@@ -760,9 +758,9 @@ input[type="radio"].visually-hidden {
 
 .filter-range-title {
   margin-bottom: 9px;
-  font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  font-weight: 600;
 }
 
 .price-controls {
@@ -787,9 +785,9 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 38px;
-  vertical-align: top;
   cursor: pointer;
 }
 
@@ -868,17 +866,17 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-results {
-  width: 1200px;
   display: flex;
   flex-direction: column;
+  width: 1200px;
   background-color: #ffffff;
 }
 
 .sorting-results {
-  width: 1200px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 1200px;
 }
 
 .sorting-info {
@@ -892,7 +890,7 @@ input[type="radio"].visually-hidden {
 
 .found {
   display: block;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -902,18 +900,18 @@ input[type="radio"].visually-hidden {
 .sorting-span {
   display: block;
   margin-left: 50px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 18px;
-  font-weight: regular;
+  font-weight: 400;
   color: #000000;
 }
 
 .sorting-list {
-  list-style: none;
+  display: flex;
   margin-left: 40px;
   padding: 0;
-  display: flex;
+  list-style: none;
 }
 
 .sorting-item {
@@ -922,10 +920,10 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-item a {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 18px;
-  font-weight: regular;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
@@ -947,9 +945,9 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-button {
-  width: 33px;
   display: flex;
   justify-content: space-between;
+  width: 33px;
   margin-right: 72px;
 }
 
@@ -971,20 +969,19 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-list {
-  width: 1200px;
   display: flex;
+  justify-content: space-between;
+  width: 1200px;
   box-sizing: border-box;
   padding: 30px 72px;
-  justify-content: space-between;
   border: 1px solid #e5e5e5;
 }
 
 .hotels-container {
   display: flex;
-  width: 423px;
   justify-content: space-between;
   align-items: stretch;
-  min-height: 90px;
+  width: 423px;
 }
 
 .hotels-image {
@@ -996,17 +993,17 @@ input[type="radio"].visually-hidden {
 .hotels-item {
   display: flex;
   flex-direction: column;
-  width: 258px;
   justify-content: space-between;
   align-items: stretch;
+  width: 258px;
 }
 
 .hotels-info {
   display: flex;
   font-size: 21px;
   line-height: 26px;
-  color: #000000;
   font-weight: bold;
+  color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
 }
@@ -1038,8 +1035,8 @@ input[type="radio"].visually-hidden {
   align-items: center;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
   color: #333333;
-  font-weight: regular;
   text-transform: uppercase;
   background-color: #ffffff;
 }
@@ -1054,14 +1051,14 @@ input[type="radio"].visually-hidden {
 
 .info-button {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 110px;
   height: 27px;
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
   font-weight: bold;
+  color: #ffffff;
   text-transform: uppercase;
   background-color: #81b3d2;
 }
@@ -1078,14 +1075,14 @@ input[type="radio"].visually-hidden {
 
 .reserve-button {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 142px;
   height: 27px;
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
   font-weight: bold;
+  color: #ffffff;
   text-transform: uppercase;
   background-color: #766357;
 }
@@ -1110,29 +1107,29 @@ input[type="radio"].visually-hidden {
 .reyting {
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
   color: #666666;
-  font-weight: regular;
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
 
 .hotels-reyting p {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .main-footer {
-  margin-top: 1px;
   display: flex;
   justify-content: center;
+  margin-top: 1px;
 }
 
 .footer-container {
-  padding: 36px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 1200px;
+  padding: 36px 0;
   background-color: #ffffff;
 }
 
@@ -1141,16 +1138,16 @@ input[type="radio"].visually-hidden {
   margin-left: 133px;
   font-size: 21px;
   line-height: 26px;
-  color: #000000;
   font-weight: bold;
+  color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
 }
 
 .footer-social {
-  text-align: center;
   width: 149px;
   margin-left: 257px;
+  text-align: center;
 }
 
 .footer-social ul {
@@ -1165,8 +1162,8 @@ input[type="radio"].visually-hidden {
 
 .social-button {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
@@ -1197,11 +1194,11 @@ input[type="radio"].visually-hidden {
 .button-text {
   display: flex;
   align-items: center;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
+  font-weight: 400;
   color: #000000;
-  font-weight: regular;
   text-transform: uppercase;
 }
 
@@ -1209,9 +1206,9 @@ input[type="radio"].visually-hidden {
   display: block;
   justify-content: center;
   align-items: center;
-  margin-left: 6px;
   width: 115px;
   height: 41px;
+  margin-left: 6px;
 }
 
 .button-image:hover path {
