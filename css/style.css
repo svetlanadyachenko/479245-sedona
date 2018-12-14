@@ -105,7 +105,8 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation-item:nth-child(2) {
-  margin-right: 244px;
+  margin-right: 236px;
+  padding-left: 73px;
 }
 
 .site-navigation-item:last-child,
@@ -117,6 +118,9 @@ input[type="radio"].visually-hidden {
   padding-bottom: 15px;
 }
 
+.site-navigation-item:nth-child(3) {
+    padding-right: 73px;
+}
 .main-header-logo {
   display: block;
   position: absolute;
@@ -167,15 +171,17 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   box-sizing: border-box;
   margin: 0;
-  padding-top: 61px;
+  padding-top: 63px;
   padding-bottom: 56px;
-  padding-left: 355px;
-  padding-right: 356px;
+  padding-left: 354px;
+  padding-right: 355px;
   text-align: center;
   background-color: #ffffff;
 }
 
 .sedona-text h2 {
+  display: block;
+  width: 440px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -183,6 +189,7 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+  text-align: center;
 }
 
 .sedona-text p {
@@ -194,6 +201,7 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+  text-align: center;
 }
 
 .features {
@@ -206,6 +214,7 @@ input[type="radio"].visually-hidden {
 .features-list {
   display: flex;
   width: 1200px;
+  margin-top: 10px;
   background-color: #81b3d2;
 }
 
@@ -223,8 +232,8 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   padding-left: 60px;
   padding-right: 60px;
-  padding-top: 46px;
-  padding-bottom: 64px;
+  padding-top: 47px;
+  padding-bottom: 65px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -258,8 +267,8 @@ input[type="radio"].visually-hidden {
 .devil-bridge {
   padding-left: 48px;
   padding-right: 49px;
-  padding-top: 39px;
-  padding-bottom: 50px;
+  padding-top: 48px;
+  padding-bottom: 61px;
 }
 
 .service {
@@ -271,15 +280,35 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 400px;
   box-sizing: border-box;
-  padding-top: 60px;
-  padding-bottom: 86px;
+  margin: 0;
   text-align: center;
   background-color: #ffffff;
 }
 
+.motel {
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 60px;
+  padding-bottom: 71px;
+}
+
+.food {
+  padding-left: 57px;
+  padding-right: 57px;
+  padding-top: 61px;
+  padding-bottom: 73px;
+}
+
+.souvenirs {
+  padding-left: 64px;
+  padding-right: 62px;
+  padding-top: 56px;
+  padding-bottom: 72px;
+}
+
 .service-list h3 {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 23px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
@@ -289,27 +318,12 @@ input[type="radio"].visually-hidden {
 
 .service-list p {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 25px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-}
-
-.motel {
-  padding-left: 73px;
-  padding-right: 73px;
-}
-
-.food {
-  padding-left: 57px;
-  padding-right: 57px;
-}
-
-.souvenirs {
-  padding-left: 64px;
-  padding-right: 62px;
 }
 
 .other-features-list {
@@ -325,8 +339,8 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 400px;
   box-sizing: border-box;
-  padding-top: 50px;
-  padding-bottom: 64px;
+  padding-top: 47px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -346,7 +360,7 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -374,8 +388,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding-top: 57px;
+  padding-top: 52px;
   width: 1200px;
   background-color: #ffffff;
 }
@@ -389,7 +402,7 @@ input[type="radio"].visually-hidden {
 
 .lookuphotels-text h2 {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 22px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   line-height: 1.2;
@@ -399,7 +412,7 @@ input[type="radio"].visually-hidden {
 
 .lookuphotels-text p {
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 47px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -462,7 +475,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   width: 458px;
   margin: 55px;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
   padding: 0;
   list-style: none;
 }
@@ -480,7 +493,7 @@ input[type="radio"].visually-hidden {
   vertical-align: baseline;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: auto;
+  line-height: 26px;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
@@ -1283,7 +1296,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   width: 115px;
   height: 41px;
-  margin-left: 6px;
+  margin-left: 10px;
 }
 
 .button-image:hover path {
