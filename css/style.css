@@ -146,8 +146,8 @@ input[type="radio"].visually-hidden {
 .sedona-text {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   width: 1200px;
   box-sizing: border-box;
   margin: 0;
@@ -180,13 +180,6 @@ input[type="radio"].visually-hidden {
   color: #333333;
 }
 
-
-
-
-
-
-
-
 .features {
   display: flex;
   flex-direction: column;
@@ -209,13 +202,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 400px;
   box-sizing: border-box;
   padding-left: 60px;
   padding-right: 60px;
-  padding-top: 36px;
-  padding-bottom: 54px;
+  padding-top: 46px;
+  padding-bottom: 64px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -224,6 +217,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 160px;
   margin: 0;
+  padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
@@ -235,7 +229,8 @@ input[type="radio"].visually-hidden {
 .features-item p {
   display: block;
   margin: 0;
-  margin-top: 30px;
+  padding: 0;
+  margin-top: 23px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -311,7 +306,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 400px;
   box-sizing: border-box;
   padding-top: 50px;
