@@ -137,7 +137,7 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   height: 59px;
   margin: 0;
-  margin-bottom: -2px;
+  margin-bottom: -3px;
   padding: 0;
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
