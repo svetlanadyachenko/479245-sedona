@@ -91,14 +91,30 @@ input[type="radio"].visually-hidden {
 .site-navigation-item {
   display: block;
   width: 239px;
+  box-sizing: border-box;
+}
+
+.site-navigation-item:first-child,
+.site-navigation-item:nth-child(2) {
+  text-align: left;
   margin: 0;
+  padding-right: 0;
+  padding-left: 72px;
   padding-top: 15px;
   padding-bottom: 15px;
-  text-align: center;
 }
 
 .site-navigation-item:nth-child(2) {
   margin-right: 244px;
+}
+
+.site-navigation-item:last-child,
+.site-navigation-item:nth-child(3) {
+  text-align: right;
+  margin: 0;
+  padding-right: 72px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .main-header-logo {
