@@ -1176,15 +1176,13 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   display: flex;
-  justify-content: center;
 }
 
 .footer-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 1200px;
-  padding: 36px 0;
   background-color: #ffffff;
 }
 
@@ -1199,9 +1197,15 @@ input[type="radio"].visually-hidden {
   bottom: 0;
 }
 
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
 .footer-contacts a {
   width: 135px;
-  margin-left: 133px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -1211,9 +1215,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
-  width: 149px;
-  margin-left: 257px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .footer-social ul {
@@ -1248,8 +1255,9 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright {
   display: flex;
-  width: 190px;
-  margin-left: 229px;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
 }
 
 .copyright-button {
