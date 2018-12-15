@@ -40,6 +40,7 @@ input[type="radio"].visually-hidden {
 .main-header {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .main-navigation {
@@ -116,7 +117,8 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
   display: block;
   position: absolute;
-  left: auto;
+  left: 530px;
+  top: 0;
   width: 140px;
   height: 72px;
   z-index: 2;
@@ -178,10 +180,9 @@ input[type="radio"].visually-hidden {
 
 .sedona-text h2 {
   display: block;
-  width: 440px;
+  width: 615px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -193,7 +194,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 31px;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -215,9 +215,20 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
 }
 
-.features-image {
+.features-image-1 {
   width: 800px;
   height: 256px;
+  background-image: url("../img/real-city.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-image-2 {
+  width: 800px;
+  height: 256px;
+  background-image: url("../img/bridge-of-devil.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .features-item {
@@ -229,8 +240,8 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   padding-left: 60px;
   padding-right: 60px;
-  padding-top: 47px;
-  padding-bottom: 64px;
+  padding-top: 46px;
+  padding-bottom: 60px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -240,7 +251,6 @@ input[type="radio"].visually-hidden {
   width: 160px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -250,10 +260,10 @@ input[type="radio"].visually-hidden {
 
 .features-item p {
   display: block;
+  width: 300px;
   margin: 0;
   padding: 0;
   margin-top: 23px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -265,7 +275,11 @@ input[type="radio"].visually-hidden {
   padding-left: 48px;
   padding-right: 49px;
   padding-top: 48px;
-  padding-bottom: 61px;
+  padding-bottom: 58px;
+}
+
+.devil-bridge p {
+width: 303px;
 }
 
 .service {
@@ -285,28 +299,38 @@ input[type="radio"].visually-hidden {
 .motel {
   padding-left: 73px;
   padding-right: 73px;
-  padding-top: 60px;
+  padding-top: 161px;
   padding-bottom: 71px;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: 162px 60px;
 }
 
 .food {
   padding-left: 57px;
   padding-right: 57px;
-  padding-top: 61px;
+  padding-top: 164px;
   padding-bottom: 73px;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-size: 74px 70px;
+  background-position: 163px 61px;
 }
 
 .souvenirs {
   padding-left: 64px;
   padding-right: 62px;
-  padding-top: 56px;
+  padding-top: 164px;
   padding-bottom: 72px;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-size: 64px 76px;
+  background-position: 168px 61px;
 }
 
 .service-list h3 {
   margin: 0;
-  margin-top: 23px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -316,7 +340,6 @@ input[type="radio"].visually-hidden {
 .service-list p {
   margin: 0;
   margin-top: 25px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -346,7 +369,6 @@ input[type="radio"].visually-hidden {
   width: 150px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -355,16 +377,20 @@ input[type="radio"].visually-hidden {
 
 .other-features-item p {
   display: block;
+  width: 250px;
   margin: 0;
   padding: 0;
   margin-top: 24px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
   text-align: center;
 }
+
+  .other-features-item:nth-child(2) p {
+    width: 280px;
+  }
 
 .third-features {
   padding-left: 96px;
@@ -385,6 +411,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   padding-top: 52px;
   width: 1200px;
   background-color: #ffffff;
@@ -400,7 +427,6 @@ input[type="radio"].visually-hidden {
 .lookuphotels-text h2 {
   margin: 0;
   margin-bottom: 22px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   line-height: 1.2;
   font-weight: bold;
@@ -410,7 +436,6 @@ input[type="radio"].visually-hidden {
 .lookuphotels-text p {
   margin: 0;
   margin-bottom: 47px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -420,7 +445,6 @@ input[type="radio"].visually-hidden {
 .search-in-sedona {
   width: 568px;
   height: 86px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -444,14 +468,14 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
-.modal-search {
+.hotels-search {
   display: flex;
   justify-content: center;
   width: 1200px;
   background-color: #ffffff;
 }
 
-.modal-map {
+.map {
   width: 1200px;
   height: 593px;
 }
@@ -460,6 +484,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   position: absolute;
+  left: 316px;
+  top: 295px;
   width: 568px;
   height: 395px;
   background-color: #ffffff;
@@ -488,7 +514,6 @@ input[type="radio"].visually-hidden {
 .search-option label {
   display: inline-block;
   vertical-align: baseline;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -504,9 +529,9 @@ input[type="radio"].visually-hidden {
   height: 38px;
   box-sizing: border-box;
   margin-bottom: 30px;
+  margin-left: 17px;
   padding-left: 13px;
   padding-right: 35px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -530,14 +555,11 @@ input[type="radio"].visually-hidden {
 
 .calendar {
   position: absolute;
+  right: 64px;
+  top: 48px;
   width: 21px;
   height: 22px;
   cursor: pointer;
-}
-
-.cal-1 {
-  right: 64px;
-  top: 48px;
 }
 
 .cal-2 {
@@ -571,7 +593,6 @@ input[type="radio"].visually-hidden {
   height: 38px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -597,7 +618,6 @@ input[type="radio"].visually-hidden {
   height: 38px;
   margin-left: 40px;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 28px;
   line-height: 26px;
   font-weight: 400;
@@ -619,7 +639,6 @@ input[type="radio"].visually-hidden {
   height: 38px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -663,7 +682,6 @@ input[type="radio"].visually-hidden {
   height: 58px;
   margin-left: 55px;
   margin-bottom: 55px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -734,7 +752,6 @@ input[type="radio"].visually-hidden {
 
 .filter-checkbox-title {
   display: flex;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -763,7 +780,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -851,7 +867,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 38px;
   cursor: pointer;
@@ -864,10 +880,13 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls input {
+  display: inline-block;
+  vertical-align: top;
   width: 50px;
   margin: 0;
   color: inherit;
-  font: inherit;
+  font-size: 14px;
+  line-height: 38px;
   background: none;
   border: none;
   text-align: left;
@@ -938,7 +957,6 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   width: 1200px;
   background-color: #ffffff;
-
 }
 
 .sorting-results {
@@ -946,21 +964,25 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   width: 1200px;
+  box-sizing: border-box;
+  padding-left: 72px;
+  padding-right: 73px;
+  padding-top: 31px;
+  padding-bottom: 36px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .sorting-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  margin-left: 72px;
-  margin-top: 19px;
-  margin-bottom: 20px;
+  width: 528px;
+  margin-left: 0;
+  margin-right: 504px;
 }
 
 .found {
   display: block;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -970,7 +992,6 @@ input[type="radio"].visually-hidden {
 .sorting-span {
   display: block;
   margin-left: 48px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -980,18 +1001,18 @@ input[type="radio"].visually-hidden {
 .sorting-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .sorting-item {
   display: flex;
-  margin-right: 32px;
+  margin-left: 34px;
+
 }
 
 .sorting-item a {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -1019,7 +1040,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   width: 33px;
-  margin-right: 72px;
 }
 
 .navigation path {
@@ -1066,7 +1086,7 @@ input[type="radio"].visually-hidden {
   width: 260px;
 }
 
-.hotels-name a{
+.hotels-info {
   display: block;
   margin: 0;
   margin-top: -5px;
@@ -1210,6 +1230,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   width: 1200px;
+  height: auto;
   background-color: #ffffff;
 }
 
@@ -1246,6 +1267,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   width: 400px;
+  box-sizing: border-box;
   padding-top: 36px;
   padding-bottom: 36px;
 }
@@ -1255,7 +1277,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 149px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -1296,7 +1318,6 @@ input[type="radio"].visually-hidden {
 .button-text {
   display: flex;
   align-items: center;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
