@@ -1223,6 +1223,8 @@ width: 303px;
 
 .main-footer {
   display: flex;
+  width: 1200;
+  height: 120px;
 }
 
 .footer-container {
@@ -1230,7 +1232,6 @@ width: 303px;
   justify-content: center;
   align-items: center;
   width: 1200px;
-  height: auto;
   background-color: #ffffff;
 }
 
