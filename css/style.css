@@ -481,6 +481,10 @@ width: 303px;
 }
 
 .search-form {
+  display: none;
+}
+
+.search-form-show {
   display: flex;
   flex-direction: column;
   position: absolute;
