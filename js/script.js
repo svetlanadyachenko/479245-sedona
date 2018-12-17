@@ -41,6 +41,18 @@ link.addEventListener("click", function (evt) {
   } else {
     datein.focus();
     }
+  if (storage) {
+    dateout.value = storage;
+    adults.focus();
+  } else {
+    datout.focus();
+    }
+  if (storage) {
+    adults.value = storage;
+    kids.focus();
+    } else {
+    adults.focus();
+    }
 });
 
 form.addEventListener("submit", function (evt) {

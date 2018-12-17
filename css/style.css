@@ -1,4 +1,5 @@
 body {
+  position: relative;
   width: 1200px;
   margin: auto;
   padding: 0;
@@ -208,26 +209,26 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.features-list {
+.features-list-1 {
   display: flex;
   width: 1200px;
   margin-top: 10px;
   background-color: #81b3d2;
-}
-
-.features-image-1 {
-  width: 800px;
-  height: 256px;
   background-image: url("../img/real-city.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-size: 800px 256px;
+  background-position: 401px 0;
 }
 
-.features-image-2 {
-  width: 800px;
-  height: 256px;
+.features-list-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  margin-top: 10px;
+  background-color: #81b3d2;
   background-image: url("../img/bridge-of-devil.jpg");
   background-repeat: no-repeat;
+  background-size: 800px 256px;
   background-position: 0 0;
 }
 
@@ -260,7 +261,7 @@ input[type="radio"].visually-hidden {
 
 .features-item p {
   display: block;
-  width: 300px;
+  width: 302px;
   margin: 0;
   padding: 0;
   margin-top: 23px;
@@ -276,10 +277,6 @@ input[type="radio"].visually-hidden {
   padding-right: 49px;
   padding-top: 48px;
   padding-bottom: 58px;
-}
-
-.devil-bridge p {
-width: 303px;
 }
 
 .service {
@@ -1292,12 +1289,6 @@ width: 303px;
 
 .main-footer {
   display: flex;
-  width: 1200;
-  height: 120px;
-}
-
-.footer-container {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 1200px;
@@ -1305,14 +1296,14 @@ width: 303px;
 }
 
 .index-footer {
-  position: relative;
-}
-
-.index-footer-container {
-  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0px;
+  width: 1200px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-contacts {
