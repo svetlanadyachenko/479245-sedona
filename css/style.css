@@ -482,10 +482,6 @@ width: 303px;
 
 .search-form {
   display: none;
-}
-
-.search-form-show {
-  display: flex;
   flex-direction: column;
   position: absolute;
   left: 316px;
@@ -495,6 +491,75 @@ width: 303px;
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   z-index: 2;
+}
+
+.search-form-show {
+  display: flex;
+  animation-name: opacity;
+  animation-duration: 0.6s;
+}
+
+.search-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .search-item {
