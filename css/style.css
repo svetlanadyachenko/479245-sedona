@@ -489,6 +489,7 @@ input[type="radio"].visually-hidden {
   z-index: 2;
   width: 1200px;
   height: 593px;
+  border: none;
 }
 
 .search-form {
@@ -619,6 +620,22 @@ input[type="radio"].visually-hidden {
   outline: 2px solid #e5e5e5;
 }
 
+.date-input[type="text"]:-moz-placeholder {
+  color: #000000;
+}
+
+.date-input[type="text"]::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.number-input[type="text"]:-moz-placeholder {
+  color: #000000;
+}
+
+.number-input[type="text"]::-webkit-input-placeholder {
+  color: #000000;
+}
+
 .calendar {
   position: absolute;
   right: 64px;
@@ -732,14 +749,6 @@ input[type="radio"].visually-hidden {
   color: #81b3d2;
   background-color: #f2f2f2;
   outline: none;
-}
-
-::-webkit-input-placeholder {
-  color: #000000;
-}
-
-:-moz-placeholder {
-  color: #000000;
 }
 
 .search-button {
