@@ -5,50 +5,21 @@ var form = popup.querySelector("form");
 var dateout = popup.querySelector("[name=dateout]");
 var adults = popup.querySelector("[name=adults]");
 var kids = popup.querySelector("[name=kids]");
-var isStorageSupport = true;
-var storage = "";
-
-try {
-  storage = localStorage.getItem("datein");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-try {
-  storage = localStorage.getItem("dateout");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-try {
-  storage = localStorage.getItem("adults");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-try {
-  storage = localStorage.getItem("kids");
-} catch (err) {
-  isStorageSupport = false;
-}
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("search-form-show");
-  if (storage) {
-    datein.value = storage;
+  if (datein.value) {
     dateout.focus();
   } else {
     datein.focus();
     }
-  if (storage) {
-    dateout.value = storage;
+  if (dateout.value) {
     adults.focus();
   } else {
     datout.focus();
     }
-  if (storage) {
-    adults.value = storage;
+  if (adults.value) {
     kids.focus();
     } else {
     adults.focus();
@@ -69,14 +40,7 @@ form.addEventListener("submit", function (evt) {
     popup.classList.remove("search-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("search-error");
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem("datein", datein.value);
-      localStorage.setItem("dateout", dateout.value);
-      localStorage.setItem("adults", adults.value);
-      localStorage.setItem("kids", kids.value);
-      }
-    }
+  }
 });
 
 window.addEventListener("keydown", function (evt) {
