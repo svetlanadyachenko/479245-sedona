@@ -87,8 +87,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
-.site-navigation-item:first-child,
-.site-navigation-item:nth-child(2) {
+.site-navigation-item:first-child {
   text-align: left;
   margin: 0;
   padding-right: 67px;
@@ -98,11 +97,25 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation-item:nth-child(2) {
+  text-align: left;
+  margin: 0;
+  padding-right: 67px;
+  padding-left: 69px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   margin-right: 230px;
 }
 
-.site-navigation-item:last-child,
 .site-navigation-item:nth-child(3) {
+  text-align: right;
+  margin: 0;
+  padding-left: 71px;
+  padding-right: 70px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+
+.site-navigation-item:last-child {
   text-align: right;
   margin: 0;
   padding-left: 75px;
@@ -169,10 +182,10 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 1200px;
   box-sizing: border-box;
-  padding-top: 61px;
-  padding-bottom: 53px;
-  padding-left: 355px;
-  padding-right: 356px;
+  padding-top: 60px;
+  padding-bottom: 51px;
+  padding-left: 352px;
+  padding-right: 352px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -190,8 +203,9 @@ input[type="radio"].visually-hidden {
 }
 
 .sedona-text p {
+  width: 487px;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 27px;
   padding: 0;
   font-size: 14px;
   line-height: 26px;
@@ -214,7 +228,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/real-city.jpg");
   background-repeat: no-repeat;
   background-size: 800px 256px;
-  background-position: 401px 0;
+  background-position: 400px 0;
 }
 
 .features-list-2 {
@@ -238,8 +252,8 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   padding-left: 60px;
   padding-right: 60px;
-  padding-top: 45px;
-  padding-bottom: 60px;
+  padding-top: 46px;
+  padding-bottom: 36px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -248,6 +262,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 160px;
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
   font-size: 21px;
   line-height: 21px;
@@ -261,7 +276,7 @@ input[type="radio"].visually-hidden {
   width: 302px;
   margin: 0;
   padding: 0;
-  margin-top: 23px;
+  margin-bottom: 22px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -273,7 +288,7 @@ input[type="radio"].visually-hidden {
   padding-left: 48px;
   padding-right: 49px;
   padding-top: 46px;
-  padding-bottom: 58px;
+  padding-bottom: 36px;
 }
 
 .service {
@@ -354,7 +369,7 @@ input[type="radio"].visually-hidden {
   width: 400px;
   box-sizing: border-box;
   padding-top: 47px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -362,6 +377,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 150px;
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
   font-size: 21px;
   line-height: 21px;
@@ -373,8 +389,8 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 250px;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
-  margin-top: 22px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -406,7 +422,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-top: 50px;
+  padding-top: 49px;
   width: 1200px;
   background-color: #ffffff;
 }
@@ -420,7 +436,7 @@ input[type="radio"].visually-hidden {
 
 .lookuphotels-text h2 {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   font-size: 30px;
   line-height: 1.2;
   font-weight: bold;
@@ -429,7 +445,7 @@ input[type="radio"].visually-hidden {
 
 .lookuphotels-text p {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
