@@ -33,7 +33,6 @@ if (popup.classList.contains("search-form-show")) {
   }
 });
 
-
 form.addEventListener("submit", function (evt) {
   if (!datein.value || !dateout.value || !adults.value || !kids.value) {
     evt.preventDefault();
