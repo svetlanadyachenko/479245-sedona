@@ -939,7 +939,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  width: 401px;
+  width: 402px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -951,9 +951,19 @@ input[type="radio"].visually-hidden {
   align-items: stretch;
 }
 
+.filter-checkbox-left {
+  width: 147px;
+}
+
+.filter-checkbox-right {
+  width: 147px;
+}
+
 .filter-checkbox-title {
-  display: flex;
-  justify-content: space-between;
+  display: inline;
+  text-align: left;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -962,7 +972,6 @@ input[type="radio"].visually-hidden {
 .filter-checkbox-input {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -972,16 +981,16 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  align-items: center;
+  margin: 0;
   margin-top: 23px;
   padding: 0;
-  padding-right: 10px;
 }
 
 .input-label {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -992,12 +1001,16 @@ input[type="radio"].visually-hidden {
   outline: 1px solid #81b3d2;
 }
 
+.filter-checkbox-right .filter-input + .checkbox-indicator {
+  margin-right: 15px;
+}
+
 .filter-input + .checkbox-indicator {
   display: block;
   align-items: center;
   width: 27px;
   height: 23px;
-  margin-right: 14px;
+  margin-right: 13px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1133,7 +1146,7 @@ input[type="radio"].visually-hidden {
 
 .range-toggle {
   position: absolute;
-  top: -9px;
+  top: -8px;
   width: 4px;
   height: 4px;
   background: #ababab;
